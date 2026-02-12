@@ -40,3 +40,103 @@ All transformations are implemented using **Apache Spark (PySpark)** in **Databr
 - Geolocation and identifier columns cast to correct numeric types.
 - Reuse of the same custom **UDF** for consistent text formatting.
 - Descriptive text columns
+
+---
+## Data Visualization and Exploratory Analysis
+
+This notebook focuses on **visualizing and analyzing traffic accident data** from **New York City** and **Serbia** using the transformed datasets produced earlier in the project.  
+The analysis is performed in **Google Colab** using **Pandas** and interactive visualization libraries.
+
+---
+
+### Data Input
+- Transformed CSV datasets loaded from local storage:
+  - `dfny.csv` – New York City traffic accidents
+  - `dfsrb.csv` – Serbia traffic accidents
+
+---
+
+### Visualization Tools
+- **Matplotlib**
+- **Seaborn**
+- **Plotly Express & Plotly Graph Objects**
+
+Interactive Plotly visualizations are used extensively to explore temporal, spatial, and categorical patterns.
+
+---
+
+### Exploratory Analysis
+
+#### Temporal Analysis
+- Number of crashes analyzed by:
+  - **Date**
+  - **Quarter of the year**
+  - **Month**
+  - **Week of the year**
+  - **Day of the month**
+  - **Day of the week**
+- Identification of seasonal and weekly trends in accident frequency.
+
+#### Time-of-Day Analysis
+- Accidents grouped into custom time periods:
+  - Midnight
+  - Dawn
+  - Morning
+  - Noon
+  - Evening
+  - Night
+- Comparison of crash distribution by time of day for both regions.
+- Visualization using **pie charts** and **scatter plots**.
+
+#### Location-Based Analysis
+- NYC accidents analyzed by:
+  - **Borough**
+  - **Street names** (Top 10 most frequent streets)
+- Identification of high-risk locations.
+
+---
+
+### Comparative Analysis (NYC vs Serbia)
+- Side-by-side comparison of:
+  - Seasonal trends
+  - Weekly and daily crash distributions
+  - Time-of-day crash patterns
+
+---
+
+### Hypothesis Testing
+
+The notebook includes **multiple hypotheses**, each evaluated through data visualization:
+
+- Increase in NYC crashes around **Independence Day (July 4th)**.
+- Increase in Serbia crashes during **New Year period**.
+- Comparison of crash frequency during **weekdays vs weekends**.
+- Analysis of most common **causes of crashes** in NYC.
+- Relationship between **time of day** and crash frequency.
+- Comparison of crashes:
+  - With injuries vs material damage only
+  - Based on number of vehicles involved
+
+Each hypothesis is clearly marked as:
+- **Confirmed** or
+- **Rejected**,  
+based on visual evidence from the data.
+
+---
+
+### Key Insights
+- Strong seasonal and weekly patterns exist in both datasets.
+- Peak accident frequency occurs during **afternoon traffic hours**, not late night.
+- Weekends show higher accident frequency despite fewer days.
+- Driver inattention is the leading cause of crashes in NYC.
+- Most accidents involve **two or more vehicles**.
+
+---
+
+### Technologies Used
+- **Python**
+- **Pandas**
+- **Matplotlib**
+- **Seaborn**
+- **Plotly**
+- **Google Colab**
