@@ -42,7 +42,7 @@ All transformations are implemented using **Apache Spark (PySpark)** in **Databr
 - Descriptive text columns
 
 ---
-## Data Visualization and Exploratory Analysis
+## File name: Vizualizacija.ipynb - Data Visualization and Exploratory Analysis
 
 This notebook focuses on **visualizing and analyzing traffic accident data** from **New York City** and **Serbia** using the transformed datasets produced earlier in the project.  
 The analysis is performed in **Google Colab** using **Pandas** and interactive visualization libraries.
